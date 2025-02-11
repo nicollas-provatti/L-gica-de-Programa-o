@@ -15,10 +15,10 @@ Cada variável deve ser declarada com um **tipo de dado** antes de ser usada.
 
 ### 🎯 Atribuição de Valores
 ```portugol
-idade <- 25
-altura <- 1.75
-nome <- "Carlos"
-ativo <- verdadeiro
+idade = 25
+altura = 1.75
+nome = "Carlos"
+ativo = verdadeiro
 ```
 
 ---
