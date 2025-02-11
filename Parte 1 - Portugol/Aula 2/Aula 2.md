@@ -35,10 +35,10 @@ ativo = verdadeiro
 
 ### 💡 Exemplo:
 ```portugol
-inteiro ano <- 2024
-real preco <- 19.99
-cadeia mensagem <- "Bem-vindo!"
-logico ligado <- falso
+inteiro ano = 2024
+real preco = 19.99
+cadeia mensagem = "Bem-vindo!"
+logico ligado = falso
 ```
 
 ---
