@@ -155,7 +155,7 @@ numero *= 2 // Agora numero é 30
 
 ---
 
-## 📖 6. Entrada e Saída de Dados: `leia` e `escreva`
+## 📌 6. Entrada e Saída de Dados: `leia` e `escreva`
 
 A interação com o usuário é feita por meio dos comandos `leia` (entrada) e `escreva` (saída).
 
@@ -171,7 +171,7 @@ programa {
 }
 ```
 
-## 📖 7. Biblioteca Matemática: Uso da Função `arredondar`
+## 📌 7. Biblioteca Matemática: Uso da Função `arredondar`
 
 A função `arredondar` da biblioteca `Matematica` é usada para arredondar números reais para o inteiro mais próximo.
 
