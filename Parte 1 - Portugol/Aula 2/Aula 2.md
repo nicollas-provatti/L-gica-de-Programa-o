@@ -1,160 +1,139 @@
-# 📌 Introdução a Variáveis, Tipos de Dados, Constantes e Operadores no Portugol
+# 📌 Fundamentos do Portugol
 
-## 📌 1. Variáveis
+## 📖 1. Variáveis
 
-As variáveis são espaços reservados na memória do computador que armazenam valores que podem ser modificados durante a execução do programa.
+As variáveis são espaços na memória do computador onde armazenamos valores que podem mudar durante a execução do programa.
 
-### 💡 Declaração de Variáveis
+### 💻 Exemplo:
 ```portugol
-inteiro idade
-real altura
-cadeia nome
-logico ativo
-```
-Cada variável deve ser declarada com um **tipo de dado** antes de ser usada.
-
-### 🎯 Atribuição de Valores
-```portugol
-idade = 25
-altura = 1.75
-nome = "Carlos"
-ativo = verdadeiro
+programa {
+    funcao inicio() {
+        inteiro idade
+        idade = 25
+        escreva("Minha idade é ", idade, " anos.")
+    }
+}
 ```
 
----
-## 📌 2. Tipos de Dados
+## 📖 2. Tipos de Dados
 
-| Tipo     | Descrição                        | Exemplo        |
-|----------|----------------------------------|----------------|
-| inteiro  | Números inteiros                 | `10`, `-5`, `200`  |
-| real     | Números decimais                 | `3.14`, `-2.5` |
-| caracter     | Caracteres simples                | 'a', 'b', '1' |
-| cadeia   | Sequência de caracteres (texto)  | "Olá, Mundo"   |
-| logico   | Valores booleanos                | `verdadeiro`, `falso` |
+O Portugol possui diferentes tipos de dados:
+- `inteiro`: números inteiros (ex: 10, -3, 200)
+- `real`: números decimais (ex: 3.14, -7.5, 10.0)
+- `caractere`: um único caractere (ex: 'A', 'z', '!')
+- `cadeia`: uma sequência de caracteres (ex: "Olá, mundo!")
+- `logico`: valores booleanos (`verdadeiro` ou `falso`)
 
-
-### 💡 Exemplo:
+### 💻 Exemplo:
 ```portugol
-inteiro ano = 2024
-real preco = 19.99
-cadeia mensagem = "Bem-vindo!"
-logico ligado = falso
+programa {
+    funcao inicio() {
+        real pi = 3.14159
+        cadeia nome = "João"
+        logico estudante = verdadeiro
+        escreva("Nome: ", nome, "\nPi: ", pi, "\nÉ estudante? ", estudante)
+    }
+}
 ```
 
----
-## 📌 3. Constantes
+## 📖 3. Constantes
 
-As constantes são valores que **não podem ser alterados** após serem definidos.
+As constantes são valores que não podem ser alterados durante a execução do programa. Devemos usar `constante` para declará-las.
 
-### 💡 Declaração de Constantes:
+### 💻 Exemplo:
 ```portugol
-constante real PI = 3.1415
-constante inteiro ANO_ATUAL = 2024
-```
-Isso garante que `PI` e `ANO_ATUAL` não possam ser modificados ao longo do programa.
-
----
-## 📌 4. Regras para Nomeação de Variáveis
-
-✅ **Boas práticas:**
-- Nomes devem ser **descritivos** e fáceis de entender (`idade`, `precoProduto`).
-- Usar **letras minúsculas** e `camelCase` para múltiplas palavras (`quantidadeMaxima`).
-- Utilizar apenas **letras, números e o caractere "_"** (`nome_usuario`).
-- Sempre começar com uma **letra** (não pode iniciar com números ou caracteres especiais).
-
-❌ **Evite:**
-- Usar **acentos e caracteres especiais** (`preço`, `número` ❌).
-- Começar com **números** (`1idade`, `2nome` ❌).
-- Utilizar **palavras reservadas da linguagem** (`inteiro`, `real`, `funcao` ❌).
-
----
-## 📌 5. Operadores
-
-### 🔢 Operadores Aritméticos
-| Operador | Operação      | Exemplo |
-|----------|--------------|---------|
-| `+`      | Adição       | `5 + 3` |
-| `-`      | Subtração    | `10 - 2` |
-| `*`      | Multiplicação | `4 * 6` |
-| `/`      | Divisão       | `8 / 2` |
-| `%`      | Resto da divisão | `10 % 3` |
-
-### 💡 Exemplo:
-```portugol
-inteiro resultado
-resultado = 5 + 3 * 2
-escreva("Resultado: ", resultado)
+programa {
+    funcao inicio() {
+        constante real PI = 3.14159
+        escreva("O valor de PI é: ", PI)
+    }
+}
 ```
 
----
-### 🔄 Operadores de Incremento e Decremento
-| Operador | Operação | Exemplo |
-|----------|---------|---------|
-| `++`    | Incrementa em 1 | `x++` (equivale a `x = x + 1`) |
-| `--`    | Decrementa em 1 | `y--` (equivale a `y = y - 1`) |
+## 📖 4. Regras para Nomeação de Variáveis
 
-### 💡 Exemplo:
+- Deve começar com uma letra.
+- Pode conter números, mas não no início.
+- Não pode conter espaços ou caracteres especiais (exceto `_`).
+- Não pode ser uma palavra reservada da linguagem.
+- Deve ser clara e descritiva.
+
+## 📖 5. Operadores
+
+### ➗ Operadores Aritméticos:
+| Operador | Descrição | Exemplo |
+|----------|-----------|---------|
+| `+` | Adição | `3 + 2 → 5` |
+| `-` | Subtração | `7 - 4 → 3` |
+| `*` | Multiplicação | `5 * 3 → 15` |
+| `/` | Divisão | `10 / 2 → 5` |
+| `%` | Módulo (resto da divisão) | `10 % 3 → 1` |
+
+### 🔁 Operadores Relacionais:
+| Operador | Descrição | Exemplo |
+|----------|-----------|---------|
+| `==` | Igualdade | `5 == 5 → verdadeiro` |
+| `!=` | Diferente | `3 != 4 → verdadeiro` |
+| `>` | Maior que | `10 > 5 → verdadeiro` |
+| `<` | Menor que | `2 < 8 → verdadeiro` |
+| `>=` | Maior ou igual | `5 >= 5 → verdadeiro` |
+| `<=` | Menor ou igual | `3 <= 4 → verdadeiro` |
+
+### 🔄 Operadores Lógicos:
+| Operador | Descrição | Exemplo |
+|----------|-----------|---------|
+| `e` | AND (ambas condições verdadeiras) | `(5 > 2) e (10 > 8) → verdadeiro` |
+| `ou` | OR (uma condição verdadeira) | `(5 > 2) ou (10 < 8) → verdadeiro` |
+| `nao` | NOT (negação) | `nao (5 > 2) → falso` |
+
+### 🔼 Operadores de Incremento e Decremento:
 ```portugol
-inteiro contador = 5
-contador++ // Agora contador é 6
-contador-- // Agora contador volta para 5
+x++ // Equivale a x = x + 1
+x-- // Equivale a x = x - 1
 ```
 
----
-### 🔍 Operadores Relacionais
-Usados para comparar valores.
-
-| Operador | Operação | Exemplo |
-|----------|---------|---------|
-| `==`    | Igualdade | `x == y` |
-| `!=`    | Diferente | `x != y` |
-| `>`     | Maior que | `x > y` |
-| `<`     | Menor que | `x < y` |
-| `>=`    | Maior ou igual | `x >= y` |
-| `<=`    | Menor ou igual | `x <= y` |
-
-### 💡 Exemplo:
+### 🖊️ Operadores de Atribuição Matemática:
 ```portugol
-logico resultado
-resultado = (5 > 3) // verdadeiro
+x += 5 // x = x + 5
+x -= 3 // x = x - 3
+x *= 2 // x = x * 2
+x /= 4 // x = x / 4
 ```
 
----
-### 🧠 Operadores Lógicos
-Utilizados para criar expressões condicionais.
+## 📖 6. Entrada e Saída de Dados: `leia` e `escreva`
 
-| Operador | Operação | Exemplo |
-|----------|---------|---------|
-| `e`     | E lógico | `(x > 2) e (y < 5)` |
-| `ou`    | OU lógico | `(x == 3) ou (y == 2)` |
-| `nao`   | Negação lógica | `nao(x > 5)` |
+A interação com o usuário é feita por meio dos comandos `leia` (entrada) e `escreva` (saída).
 
-### 💡 Exemplo:
+### 💻 Exemplo:
 ```portugol
-logico resultado
-resultado = (idade > 18) e (ativo == verdadeiro)
+programa {
+    funcao inicio() {
+        inteiro idade
+        escreva("Digite sua idade: ")
+        leia(idade)
+        escreva("Você tem ", idade, " anos.")
+    }
+}
 ```
 
----
-### 📝 Operadores de Atribuição Matemática
-São atalhos para operações matemáticas com atribuição.
+## 📖 7. Biblioteca Matemática: Uso da Função `arredondar`
 
-| Operador | Operação Equivalente | Exemplo |
-|----------|----------------------|---------|
-| `+=`    | `x = x + y` | `x += 5` |
-| `-=`    | `x = x - y` | `x -= 3` |
-| `*=`    | `x = x * y` | `x *= 2` |
-| `/=`    | `x = x / y` | `x /= 4` |
-| `%=`    | `x = x % y` | `x %= 2` |
+A função `arredondar` da biblioteca `Matematica` é usada para arredondar números reais para o inteiro mais próximo.
 
-### 💡 Exemplo:
+### 💻 Exemplo:
 ```portugol
-inteiro numero = 10
-numero += 5 // Agora numero é 15
-numero *= 2 // Agora numero é 30
+programa {
+    inclua biblioteca Matematica --> mat
+    
+    funcao inicio() {
+        real numero = 3.7
+        inteiro arredondado
+        
+        arredondado = mat.arredondar(numero)
+        
+        escreva("O número arredondado de ", numero, " é ", arredondado)
+    }
+}
 ```
 
 ---
-## 📌 Conclusão
-
-Esses conceitos são fundamentais para começar a programar em Portugol. Pratique com pequenos códigos para reforçar o aprendizado! 🚀
