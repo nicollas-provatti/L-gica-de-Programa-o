@@ -48,8 +48,8 @@ As constantes são valores que **não podem ser alterados** após serem definido
 
 ### 💡 Declaração de Constantes:
 ```portugol
-constante real PI <- 3.1415
-constante inteiro ANO_ATUAL <- 2024
+constante real PI = 3.1415
+constante inteiro ANO_ATUAL = 2024
 ```
 Isso garante que `PI` e `ANO_ATUAL` não possam ser modificados ao longo do programa.
 
