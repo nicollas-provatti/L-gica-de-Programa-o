@@ -82,7 +82,7 @@ Isso garante que `PI` e `ANO_ATUAL` não possam ser modificados ao longo do prog
 ### 💡 Exemplo:
 ```portugol
 inteiro resultado
-resultado <- 5 + 3 * 2
+resultado = 5 + 3 * 2
 escreva("Resultado: ", resultado)
 ```
 
@@ -90,12 +90,12 @@ escreva("Resultado: ", resultado)
 ### 🔄 Operadores de Incremento e Decremento
 | Operador | Operação | Exemplo |
 |----------|---------|---------|
-| `++`    | Incrementa em 1 | `x++` (equivale a `x <- x + 1`) |
-| `--`    | Decrementa em 1 | `y--` (equivale a `y <- y - 1`) |
+| `++`    | Incrementa em 1 | `x++` (equivale a `x = x + 1`) |
+| `--`    | Decrementa em 1 | `y--` (equivale a `y = y - 1`) |
 
 ### 💡 Exemplo:
 ```portugol
-inteiro contador <- 5
+inteiro contador = 5
 contador++ // Agora contador é 6
 contador-- // Agora contador volta para 5
 ```
@@ -116,7 +116,7 @@ Usados para comparar valores.
 ### 💡 Exemplo:
 ```portugol
 logico resultado
-resultado <- (5 > 3) // verdadeiro
+resultado = (5 > 3) // verdadeiro
 ```
 
 ---
@@ -132,7 +132,7 @@ Utilizados para criar expressões condicionais.
 ### 💡 Exemplo:
 ```portugol
 logico resultado
-resultado <- (idade > 18) e (ativo == verdadeiro)
+resultado = (idade > 18) e (ativo == verdadeiro)
 ```
 
 ---
@@ -141,15 +141,15 @@ São atalhos para operações matemáticas com atribuição.
 
 | Operador | Operação Equivalente | Exemplo |
 |----------|----------------------|---------|
-| `+=`    | `x <- x + y` | `x += 5` |
-| `-=`    | `x <- x - y` | `x -= 3` |
-| `*=`    | `x <- x * y` | `x *= 2` |
-| `/=`    | `x <- x / y` | `x /= 4` |
-| `%=`    | `x <- x % y` | `x %= 2` |
+| `+=`    | `x = x + y` | `x += 5` |
+| `-=`    | `x = x - y` | `x -= 3` |
+| `*=`    | `x = x * y` | `x *= 2` |
+| `/=`    | `x = x / y` | `x /= 4` |
+| `%=`    | `x = x % y` | `x %= 2` |
 
 ### 💡 Exemplo:
 ```portugol
-inteiro numero <- 10
+inteiro numero = 10
 numero += 5 // Agora numero é 15
 numero *= 2 // Agora numero é 30
 ```
