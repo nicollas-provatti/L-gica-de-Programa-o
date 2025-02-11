@@ -28,7 +28,7 @@ ativo = verdadeiro
 |----------|----------------------------------|----------------|
 | inteiro  | Números inteiros                 | `10`, `-5`, `200`  |
 | real     | Números decimais                 | `3.14`, `-2.5` |
-| caracter     | Caracteressimples                | 'a', 'b', '1' |
+| caracter     | Caracteres simples                | 'a', 'b', '1' |
 | cadeia   | Sequência de caracteres (texto)  | "Olá, Mundo"   |
 | logico   | Valores booleanos                | `verdadeiro`, `falso` |
 
