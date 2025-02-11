@@ -154,6 +154,41 @@ numero *= 2 // Agora numero é 30
 ```
 
 ---
-## 📌 Conclusão
 
-Esses conceitos são fundamentais para começar a programar em Portugol. Pratique com pequenos códigos para reforçar o aprendizado! 🚀
+## 📖 6. Entrada e Saída de Dados: `leia` e `escreva`
+
+A interação com o usuário é feita por meio dos comandos `leia` (entrada) e `escreva` (saída).
+
+### 💻 Exemplo:
+```portugol
+programa {
+    funcao inicio() {
+        inteiro idade
+        escreva("Digite sua idade: ")
+        leia(idade)
+        escreva("Você tem ", idade, " anos.")
+    }
+}
+```
+
+## 📖 7. Biblioteca Matemática: Uso da Função `arredondar`
+
+A função `arredondar` da biblioteca `Matematica` é usada para arredondar números reais para o inteiro mais próximo.
+
+### 💻 Exemplo:
+```portugol
+programa {
+    inclua biblioteca Matematica --> mat
+    
+    funcao inicio() {
+        real numero = 3.7
+        inteiro arredondado
+        
+        arredondado = mat.arredondar(numero)
+        
+        escreva("O número arredondado de ", numero, " é ", arredondado)
+    }
+}
+```
+
+---
